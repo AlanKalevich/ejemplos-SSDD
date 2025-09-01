@@ -4,7 +4,7 @@ public class Client {
     public static void main(String[] args) {
         try {
             // Busca el servicio en el registro RMI
-            Calculator calculator = (Calculator) Naming.lookup("rmi://localhost/CalculatorService");
+            Calculator calculator = (Calculator) Naming.lookup("rmi://192.168.41.42/CalculatorService");
             
             // Llama al método remoto
             int result = calculator.add(5, 3);
